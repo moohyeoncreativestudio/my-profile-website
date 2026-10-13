@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <radialGradient id="amber" cx="68%" cy="38%" r="55%">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.55"/>
+      <stop offset="0.45" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="cyan" cx="22%" cy="72%" r="50%">
+      <stop offset="0" stop-color="#03b5d3" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#03b5d3" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#03b5d3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#4cd7f6"/>
+      <stop offset="1" stop-color="#ffc174"/>
+    </linearGradient>
+    <pattern id="pixels" width="32" height="32" patternUnits="userSpaceOnUse">
+      <rect x="1" y="1" width="30" height="30" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+
+  <!-- 배경: Obsidian Void + 앰버/시안 조명 -->
+  <rect width="1280" height="720" fill="#0d0f12"/>
+  <rect width="1280" height="720" fill="url(#cyan)"/>
+  <rect width="1280" height="720" fill="url(#amber)"/>
+  <rect width="1280" height="720" fill="url(#pixels)"/>
+
+  <!-- 생성되는 픽셀: 시안에서 앰버로 -->
+  <g>
+    <rect x="160" y="448" width="30" height="30" fill="#4cd7f6" opacity="0.55"/>
+    <rect x="224" y="384" width="30" height="30" fill="#4cd7f6" opacity="0.35"/>
+    <rect x="256" y="480" width="30" height="30" fill="#4cd7f6" opacity="0.25"/>
+    <rect x="320" y="320" width="30" height="30" fill="#4cd7f6" opacity="0.4"/>
+    <rect x="352" y="416" width="30" height="30" fill="#4cd7f6" opacity="0.18"/>
+    <rect x="416" y="256" width="30" height="30" fill="#acedff" opacity="0.3"/>
+    <rect x="448" y="352" width="30" height="30" fill="#4cd7f6" opacity="0.22"/>
+    <rect x="800" y="192" width="30" height="30" fill="#ffc174" opacity="0.35"/>
+    <rect x="864" y="288" width="30" height="30" fill="#ffc174" opacity="0.22"/>
+    <rect x="928" y="160" width="30" height="30" fill="#f59e0b" opacity="0.45"/>
+    <rect x="992" y="256" width="30" height="30" fill="#f59e0b" opacity="0.28"/>
+    <rect x="1056" y="128" width="30" height="30" fill="#ffc174" opacity="0.2"/>
+    <rect x="1024" y="352" width="30" height="30" fill="#f59e0b" opacity="0.18"/>
+  </g>
+
+  <!-- 렌즈 조리개 -->
+  <g transform="translate(640 360)" fill="none">
+    <circle r="210" stroke="url(#ring)" stroke-opacity="0.35" stroke-width="2"/>
+    <circle r="160" stroke="url(#ring)" stroke-opacity="0.6" stroke-width="3"/>
+    <circle r="112" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1"/>
+    <g stroke="url(#ring)" stroke-opacity="0.5" stroke-width="2">
+      <path d="M0 -160 L80 -40"/>
+      <path d="M138.6 -80 L74.6 46.6"/>
+      <path d="M138.6 80 L-5.4 86.6"/>
+      <path d="M0 160 L-80 40"/>
+      <path d="M-138.6 80 L-74.6 -46.6"/>
+      <path d="M-138.6 -80 L5.4 -86.6"/>
+    </g>
+  </g>
+
+  <!-- 2.39:1 프레임 가이드 -->
+  <g stroke="#ffffff" stroke-opacity="0.18" stroke-width="2" fill="none">
+    <path d="M96 128 h48 M96 128 v40"/>
+    <path d="M1184 128 h-48 M1184 128 v40"/>
+    <path d="M96 592 h48 M96 592 v-40"/>
+    <path d="M1184 592 h-48 M1184 592 v-40"/>
+  </g>
+</svg>
