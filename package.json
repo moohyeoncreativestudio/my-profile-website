@@ -1,0 +1,13 @@
+{
+  "name": "my-profile",
+  "version": "1.0.0",
+  "description": "정무현 영상 디렉터 개인 프로필 웹사이트 (정적 HTML/CSS/JS)",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+.vercel/
+.DS_Store
+
+# Stitch 원본 zip (stitch_export/와 동일한 내용)
+stitch_video_producer_portfolio_website.zip

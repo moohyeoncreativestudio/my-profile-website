@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>K.V. CINEMA | 강민우 Minwoo Kang - Video Director</title>
+<!-- Google Fonts: Syne, Space Grotesk, Inter, Noto Sans KR -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Sans+KR:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#003640",
+            "on-background": "#e2e2e6",
+            "on-surface-variant": "#d8c3ad",
+            "surface-container-highest": "#333538",
+            "surface-tint": "#ffb95f",
+            "surface-container-lowest": "#0c0e11",
+            "on-secondary-fixed-variant": "#004e5c",
+            "surface-container-high": "#282a2d",
+            "surface-bright": "#37393d",
+            "on-primary": "#472a00",
+            "tertiary-fixed-dim": "#7fd0ff",
+            "surface": "#111317",
+            "surface-container-low": "#1a1c1f",
+            "on-tertiary-container": "#004966",
+            "on-secondary-fixed": "#001f26",
+            "inverse-on-surface": "#2f3034",
+            "surface-variant": "#333538",
+            "on-tertiary-fixed-variant": "#004c6a",
+            "tertiary-container": "#1abdff",
+            "inverse-surface": "#e2e2e6",
+            "primary-fixed": "#ffddb8",
+            "surface-container": "#1e2023",
+            "secondary-fixed-dim": "#4cd7f6",
+            "primary": "#ffc174",
+            "on-error": "#690005",
+            "on-primary-fixed-variant": "#653e00",
+            "secondary-container": "#03b5d3",
+            "on-secondary-container": "#00424e",
+            "outline-variant": "#534434",
+            "tertiary": "#8fd5ff",
+            "on-error-container": "#ffdad6",
+            "outline": "#a08e7a",
+            "inverse-primary": "#855300",
+            "primary-container": "#f59e0b",
+            "on-surface": "#e2e2e6",
+            "on-tertiary": "#00344a",
+            "tertiary-fixed": "#c5e7ff",
+            "secondary-fixed": "#acedff",
+            "primary-fixed-dim": "#ffb95f",
+            "surface-dim": "#111317",
+            "background": "#111317",
+            "on-primary-container": "#613b00",
+            "error": "#ffb4ab",
+            "on-tertiary-fixed": "#001e2d",
+            "secondary": "#4cd7f6",
+            "error-container": "#93000a",
+            "on-primary-fixed": "#2a1700"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xl": "3rem",
+            "margin": "4rem",
+            "space-xs": "0.25rem",
+            "gutter-mobile": "1rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "margin-tablet": "2rem",
+            "space-lg": "1.75rem"
+          },
+          "fontFamily": {
+            "label-badge": ["Space Grotesk", "sans-serif"],
+            "headline-lg-mobile": ["Syne", "sans-serif"],
+            "headline-md": ["Syne", "sans-serif"],
+            "body-md": ["Inter", "Noto Sans KR", "sans-serif"],
+            "headline-lg": ["Syne", "sans-serif"],
+            "body-sm": ["Inter", "Noto Sans KR", "sans-serif"],
+            "body-lg": ["Inter", "Noto Sans KR", "sans-serif"],
+            "label-caps": ["Space Grotesk", "sans-serif"],
+            "headline-sm": ["Syne", "sans-serif"],
+            "display-hero": ["Syne", "sans-serif"],
+            "display-hero-mobile": ["Syne", "sans-serif"]
+          },
+          "fontSize": {
+            "label-badge": ["13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" }],
+            "headline-lg-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-lg": ["52px", { "lineHeight": "60px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-lg": ["19px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-hero": ["76px", { "lineHeight": "84px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "display-hero-mobile": ["44px", { "lineHeight": "50px", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #0D0F12;
+      color: #e2e2e6;
+      font-family: 'Inter', 'Noto Sans KR', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: max(884px, 100dvh);
+    }
+    
+    .cinematic-glow {
+      background: radial-gradient(circle at 60% 20%, rgba(245, 158, 11, 0.15) 0%, rgba(13, 15, 18, 0) 70%);
+    }
+
+    .glass-panel {
+      background: rgba(22, 26, 34, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+    }
+
+    .glass-card {
+      background: #161A22;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(245, 158, 11, 0.3);
+      box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(245, 158, 11, 0.2);
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-surface-container-lowest pb-28 md:pb-16">
+<!-- ================= TOP APP BAR ================= -->
+<header class="bg-surface/85 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center w-full px-5 py-3.5 max-w-5xl mx-auto">
+<!-- Leading Icon & Brand Anchor -->
+<a class="flex items-center gap-2.5 group active:scale-95 transition-transform duration-150" href="#home">
+<span class="material-symbols-outlined text-primary text-2xl group-hover:rotate-12 transition-transform duration-300" data-icon="movie">movie</span>
+<span class="font-headline-sm font-bold tracking-widest text-primary text-lg sm:text-xl">K.V. CINEMA</span>
+</a>
+<!-- Desktop Nav Cluster -->
+<nav class="hidden md:flex items-center gap-7">
+<a class="text-primary font-semibold text-label-caps font-label-caps hover:text-primary transition-colors duration-200 tracking-wider" href="#home">HOME</a>
+<a class="text-on-surface-variant text-label-caps font-label-caps hover:text-primary transition-colors duration-200 tracking-wider" href="#about">ABOUT</a>
+<a class="text-on-surface-variant text-label-caps font-label-caps hover:text-primary transition-colors duration-200 tracking-wider" href="#projects">PROJECTS</a>
+<a class="text-on-surface-variant text-label-caps font-label-caps hover:text-primary transition-colors duration-200 tracking-wider" href="#contact">CONTACT</a>
+</nav>
+<!-- Trailing Action -->
+<div class="flex items-center gap-3">
+<a class="px-4 py-2 rounded-full bg-surface-container-high border border-outline-variant/40 hover:border-primary-container/60 text-primary text-label-caps font-label-caps active:scale-95 transition-all duration-150 flex items-center gap-2" href="#contact">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+          Contact
+        </a>
+</div>
+</div>
+</header>
+<!-- Ambient Cinematic Grain & Glow Container -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute top-0 right-0 w-full max-w-3xl h-[480px] cinematic-glow pointer-events-none"></div>
+<!-- ================= 2. HOME SECTION (Side-by-Side Flex Layout) ================= -->
+<section class="relative pt-8 pb-16 px-5 sm:px-8 max-w-4xl mx-auto" id="home">
+<div class="flex flex-row items-center justify-between gap-5 sm:gap-8">
+<!-- Left Side: Introduction Content -->
+<div class="flex-1 min-w-0 text-left">
+<!-- Role Badge -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container/70 border border-outline-variant/35 mb-3.5">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="videocam">videocam</span>
+<span class="font-label-badge text-[12px] sm:text-label-badge text-on-surface tracking-wide truncate">Video Director &amp; Cinematographer</span>
+</div>
+<!-- Director Name -->
+<h1 class="font-headline-lg-mobile text-[28px] sm:text-headline-lg font-bold text-on-background tracking-tight leading-tight mb-2.5">
+      강민우 <span class="block sm:inline text-primary text-lg sm:text-headline-sm font-light opacity-90 mt-0.5 sm:mt-0">(Minwoo Kang)</span>
+</h1>
+<!-- Subtitle / Bio Description -->
+<p class="font-body-md text-sm sm:text-body-md text-on-surface-variant leading-relaxed mb-6 max-w-md">
+      빛과 서사로 감각적인 순간을 프레임에 담아내는 영상 디렉터입니다. 상업 광고, 뮤직비디오, 시네마틱 다큐멘터리 연출.
+    </p>
+<!-- Call to Actions -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+<a class="px-5 py-3 rounded-full bg-primary-container text-surface-container-lowest font-headline-sm text-sm font-bold flex items-center justify-center gap-2 shadow-lg hover:shadow-primary-container/30 active:scale-95 transition-all duration-200" href="#projects">
+<span class="material-symbols-outlined text-xl" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+<span>2024 쇼릴 감상하기</span>
+</a>
+<a class="px-5 py-3 rounded-full bg-surface-container/50 hover:bg-surface-container border border-outline-variant/50 hover:border-primary-container/50 text-on-surface font-body-md text-sm font-medium flex items-center justify-center gap-2 active:scale-95 transition-all duration-200" href="#contact">
+<span class="material-symbols-outlined text-lg text-primary" data-icon="edit_calendar">edit_calendar</span>
+<span>프로젝트 의뢰하기</span>
+</a>
+</div>
+</div>
+<!-- Right Side: Profile Photo Avatar & Viewfinder REC Badge -->
+<div class="relative shrink-0 flex flex-col items-center">
+<div class="relative group">
+<!-- Rim light circle halo -->
+<div class="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary-container/50 via-surface-container-high to-secondary-container/40 blur-md opacity-70 group-hover:opacity-100 transition duration-500"></div>
+<!-- Portrait Image Circle Wrapper -->
+<div class="relative w-28 h-28 sm:w-44 sm:h-44 rounded-full overflow-hidden p-1 bg-surface-container-lowest border border-outline-variant/40 shadow-2xl">
+<img class="w-full h-full object-cover rounded-full filter contrast-105" data-alt="Cinematic moody high-fashion close-up portrait of Korean male film director Minwoo Kang inside a shadowy editing suite. Lit by warm amber 3200K tungsten rim lighting against cool anamorphic cyan shadows. He wears a dark minimalist linen shirt and stares with intense creative vision into the lens. Shot on Cooke anamorphic lenses with rich film texture, cinematic grain, and shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6ciHQwS1Dyxfi_SlBjDJdhIEFIPPZLGZmgbD-t_azeKxJPSMzW4M4by_QuT8SWFea8NzzFDOf0HmJHn8jOI29_DcaWMfIOxmiNMvIwP1sQeDJoCgnXZ-DsBuPzX-8Mqzcx5oobI_hakvnHOH68rQRj948n9zeoUdBnsxFLRU2Dz0gCXK73AQXSMKY3afKZ2r1tGjCHvOq1XiKnVEPchFxsW7QUrNFOfk59DCFrpPLVnBv6ypEA0AY"/>
+</div>
+<!-- REC Viewfinder Badge -->
+<div class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/95 backdrop-blur-md border border-primary-container/60 flex items-center gap-1.5 shadow-xl whitespace-nowrap">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-[10px] sm:text-label-caps text-primary tracking-widest uppercase">REC 24P</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-4 w-full mt-14 pt-8 border-t border-outline-variant/20">
+<div class="text-center">
+<p class="font-headline-sm text-2xl sm:text-headline-sm text-primary font-bold">50+</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-wider mt-1">COMMERCIALS</p>
+</div>
+<div class="text-center border-x border-outline-variant/20">
+<p class="font-headline-sm text-2xl sm:text-headline-sm text-secondary font-bold">4K/8K</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-wider mt-1">RAW PIPELINE</p>
+</div>
+<div class="text-center">
+<p class="font-headline-sm text-xl sm:text-headline-sm text-primary font-bold">BIFAN/BISFF</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant tracking-wider mt-1">SELECTION</p>
+</div>
+</div>
+</section>
+<!-- ================= 3. ABOUT SECTION ================= -->
+<section class="py-16 px-5 sm:px-8 max-w-4xl mx-auto border-t border-outline-variant/20" id="about">
+<!-- Section Header -->
+<div class="flex items-center justify-between mb-8">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-1.5">CRAFT &amp; CALIBRATION</span>
+<h2 class="font-headline-md text-headline-md text-on-background flex items-center gap-2.5">
+            ABOUT <span class="font-light text-on-surface-variant text-2xl">/ 소개</span>
+</h2>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-3xl" data-icon="person">person</span>
+</div>
+<!-- Bento Cards Grid -->
+<div class="space-y-5">
+<!-- Card 1: Education & Major -->
+<div class="glass-card rounded-2xl p-6 relative overflow-hidden">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="school">school</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">EDUCATION &amp; DEGREE</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">B.F.A</span>
+</div>
+<h3 class="font-headline-sm text-lg text-on-surface mt-1 mb-1.5 font-semibold">전공 (Academic Background)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                한국예술종합학교 영상원 영화과 졸업 (B.F.A in Filmmaking)
+              </p>
+</div>
+</div>
+</div>
+<!-- Card 2: Experience & Career -->
+<div class="glass-card rounded-2xl p-6 relative overflow-hidden">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-2xl" data-icon="workspace_premium">workspace_premium</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary tracking-wider uppercase">EXPERIENCE &amp; AWARDS</span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">2020 — PRESENT</span>
+</div>
+<h3 class="font-headline-sm text-lg text-on-surface mt-1 mb-2.5 font-semibold">경력 및 주요 연출 이력</h3>
+<ul class="space-y-2.5 text-on-surface-variant font-body-sm text-body-sm leading-relaxed">
+<li class="flex items-start gap-2.5">
+<span class="text-primary mt-1 text-base leading-none">•</span>
+<span>프로덕션 <strong class="text-on-surface">‘LUMEN STUDIO’</strong> 메인 디렉터 (2020 - 현재)</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-primary mt-1 text-base leading-none">•</span>
+<span>50+ 편의 TVC 및 글로벌 브랜드 디지털 캠페인 연출 총괄</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-primary mt-1 text-base leading-none">•</span>
+<span>부산국제단편영화제(BISFF) 및 부천국제판타스틱영화제 초청 및 수상</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Card 3: Technical Specialties & Lens Gears -->
+<div class="glass-card rounded-2xl p-6 relative overflow-hidden">
+<div class="flex items-start gap-4 mb-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-2xl" data-icon="tune">tune</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-primary tracking-wider uppercase">EXPERTISE &amp; TECH STACK</span>
+<h3 class="font-headline-sm text-lg text-on-surface mt-1 font-semibold">관심 및 전문 분야</h3>
+</div>
+</div>
+<!-- Badges Cluster -->
+<div class="flex flex-wrap gap-2.5 pt-1">
+<span class="px-3.5 py-1.5 rounded-full text-label-badge font-label-badge bg-surface-container border border-primary/40 text-primary tracking-wide">
+              상업 광고(Commercials)
+            </span>
+<span class="px-3.5 py-1.5 rounded-full text-label-badge font-label-badge bg-surface-container border border-secondary/40 text-secondary tracking-wide">
+              뮤직비디오(Music Video)
+            </span>
+<span class="px-3.5 py-1.5 rounded-full text-label-badge font-label-badge bg-surface-container border border-secondary/40 text-secondary tracking-wide">
+              컬러 그레이딩(DaVinci Resolve)
+            </span>
+<span class="px-3.5 py-1.5 rounded-full text-label-badge font-label-badge bg-surface-container border border-outline-variant/50 text-on-surface-variant tracking-wide">
+              드론 항공촬영
+            </span>
+<span class="px-3.5 py-1.5 rounded-full text-label-badge font-label-badge bg-surface-container border border-primary/40 text-primary tracking-wide">
+              시네마 렌즈 &amp; 아나모픽 연출
+            </span>
+</div>
+<!-- Technical Spec Strip Indicator -->
+<div class="mt-5 pt-3.5 border-t border-outline-variant/20 flex items-center justify-between text-on-surface-variant/70 font-label-caps text-label-caps overflow-x-auto whitespace-nowrap gap-3">
+<span>RED V-RAPTOR</span>
+<span class="text-outline-variant">•</span>
+<span>COOKE ANAMORPHIC /i</span>
+<span class="text-outline-variant">•</span>
+<span>2.39:1 CINEMASCOPE</span>
+<span class="text-outline-variant">•</span>
+<span>ACES DCI-P3</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= 4. PROJECTS SECTION (Horizontal Carousel Layout) ================= -->
+<section class="py-16 px-5 sm:px-8 max-w-5xl mx-auto border-t border-outline-variant/20" id="projects">
+<!-- Section Header & Carousel Indicators -->
+<div class="flex items-end justify-between mb-8">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-1.5">SELECTED SHOWCASE</span>
+<h2 class="font-headline-md text-headline-md text-on-background flex items-center gap-2.5">
+            FEATURED PROJECTS <span class="font-light text-on-surface-variant text-2xl">/ 주요 영상</span>
+</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant hidden sm:inline">SWIPE TO EXPLORE</span>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high border border-outline-variant/40">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant/60"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant/60"></span>
+<span class="material-symbols-outlined text-xs text-primary ml-1" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Horizontal Scrolling Project Carousel -->
+<div class="flex flex-row overflow-x-auto pb-6 gap-6 snap-x snap-mandatory no-scrollbar -mx-5 px-5 sm:mx-0 sm:px-0">
+<!-- PROJECT 1: HYUNDAI IONIQ -->
+<article class="glass-card rounded-2xl overflow-hidden group shrink-0 w-[84vw] sm:w-[420px] snap-center flex flex-col">
+<!-- 16:9 Aspect Ratio Cinematic Thumbnail Container -->
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Cinematic commercial shot of a futuristic sleek electric vehicle driving through a dark metropolitan neon bridge highway at twilight. Sharp anamorphic light flares stream horizontally across the frame. Reflections of amber sodium streetlights and cyan skylines glisten over glossy metallic surfaces. High contrast, widescreen 16:9 composition, ultra sharp 4K film still." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFTwVxLCC8ru6-5lhL8OyurBrZuUaw6KLIKNI0EAzSRJHol9tocnEEpo_hOkTKtLA3eWvSM-D7bpQ2RsuNhKAtkTWtbFRoS8o7eAOmakx0Lw7-S9iqnsY7BxlKkr-XR8diDptqGZOEVtNiiqf7FIAtZfgV3S7gpghYdjHccCFXhzqMSkuyU9zOQgJDv4BlsfoUQevIHQP5HAGyBZaXHFq_dUUklljZh0u8rJvO362RItJlbF1AbqC2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Top HUD Badges -->
+<div class="absolute top-3.5 left-3.5 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 font-label-caps text-label-caps text-on-surface flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+              4K UHD • 03:45
+</div>
+<div class="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md border border-outline-variant/40 font-label-caps text-label-caps text-primary">
+              2024 • COMMERCIAL
+</div>
+<!-- Floating Center Play Action -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest/70 backdrop-blur-md border border-primary-container/60 flex items-center justify-center text-primary-container group-hover:scale-110 group-hover:border-primary-container group-hover:bg-primary-container group-hover:text-surface-container-lowest transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined text-3xl ml-0.5" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Project Details Meta Dock -->
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2.5">
+<span class="px-2.5 py-0.5 rounded text-label-caps font-label-caps bg-primary/10 text-primary border border-primary/30">
+      DIRECTOR &amp; DP
+    </span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">총괄 연출 및 촬영</span>
+</div>
+<h3 class="font-headline-sm text-xl text-on-surface font-bold tracking-tight mb-2.5 group-hover:text-primary transition-colors">
+    HYUNDAI IONIQ - "Beyond Horizon"
+  </h3>
+<p class="font-body-md text-sm sm:text-body-md text-on-surface-variant leading-relaxed mb-5">
+    미래지향적인 비주얼과 속도감을 감각적인 컷 전환으로 담아낸 전기차 글로벌 캠페인 영상.
+  </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="font-label-caps text-[11px] text-on-surface-variant/80 tracking-wider">ARRI ALEXA LF // ANAMORPHIC</span>
+<a class="inline-flex items-center gap-1.5 font-label-caps text-label-caps text-primary hover:text-primary-container transition-colors font-bold" href="#contact">
+    영상 보기 <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 2: DEAN x RAD MUSEUM -->
+<article class="glass-card rounded-2xl overflow-hidden group shrink-0 w-[84vw] sm:w-[420px] snap-center flex flex-col">
+<!-- 16:9 Aspect Ratio Cinematic Thumbnail Container -->
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Cinematic 16mm film aesthetic music video still featuring an artist singing inside a retro moody smoky Seoul jazz club bar at 2AM. Soft golden tungsten lamp glow warmly illuminates cigarette haze against deep midnight shadows. Organic grain texture, expressive color grading with desaturated teal tones and warm amber highlights, artistic shallow focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb5NFDbOiex4eljv88Z1PgAXcj2DfMc7K-Y-lpxypP2HuPEvvoVsCHcxDOzJApxm9Q3wUlSOA6SLIJUeQlcMPeUQI0F4PP_4CEC0vJcOgRGZ7yHa7d5_w37HdafCz_atAlg7H4GSb_YD9PCZw4824cKZbZnVPtArVDpobRiN5XL45awTS6twn2_DNRT8fq6sPF8fgchHk7jNSTKH0iOyM9qnJXqzka_axxD3H5T-yMxGojEv5-S4Rc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Top HUD Badges -->
+<div class="absolute top-3.5 left-3.5 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 font-label-caps text-label-caps text-on-surface flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              16MM FILM • 04:12
+</div>
+<div class="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md border border-outline-variant/40 font-label-caps text-label-caps text-secondary">
+              2024 • MUSIC VIDEO
+</div>
+<!-- Floating Center Play Action -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest/70 backdrop-blur-md border border-primary-container/60 flex items-center justify-center text-primary-container group-hover:scale-110 group-hover:border-primary-container group-hover:bg-primary-container group-hover:text-surface-container-lowest transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined text-3xl ml-0.5" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Project Details Meta Dock -->
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2.5">
+<span class="px-2.5 py-0.5 rounded text-label-caps font-label-caps bg-secondary/10 text-secondary border border-secondary/30">
+      EDITOR &amp; COLORIST
+    </span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">연출 &amp; 색보정</span>
+</div>
+<h3 class="font-headline-sm text-xl text-on-surface font-bold tracking-tight mb-2.5 group-hover:text-primary transition-colors">
+    DEAN x RAD MUSEUM - "MIDNIGHT BLUES"
+  </h3>
+<p class="font-body-md text-sm sm:text-body-md text-on-surface-variant leading-relaxed mb-5">
+    16mm 필름 룩과 아나모픽 렌즈로 연출한 몽환적인 네오 소울 뮤직비디오.
+  </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="font-label-caps text-[11px] text-on-surface-variant/80 tracking-wider">KODAK 500T // KOWA ANAMORPHIC</span>
+<a class="inline-flex items-center gap-1.5 font-label-caps text-label-caps text-primary hover:text-primary-container transition-colors font-bold" href="#contact">
+    영상 보기 <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- PROJECT 3: NEO SEOUL DOCUMENTARY -->
+<article class="glass-card rounded-2xl overflow-hidden group shrink-0 w-[84vw] sm:w-[420px] snap-center flex flex-col">
+<!-- 16:9 Aspect Ratio Cinematic Thumbnail Container -->
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Cinematic documentary frame grab of an elderly Korean metal craftsman meticulously shaping copper over an incandescent flame in a historic Euljiro workshop. Golden flying sparks illuminate textured weathered hands against industrial dark iron tools. Rich chiaroscuro lighting, tactile documentary depth, warm amber embers, 4K documentary masterpiece." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkqcYWbqcakaxbiMP95PQsFZp2jX_G3GEL96h9DOgH-wueK8srJ239dliKzV5aQzrVgT_zOBncpFXnd3jozYMMZqD6JHDHv35dlSn0Ckg-v1iU1lzSAZDJfrpdvelfhiA6BmYezOUHMVmRtpZ43abGQuDiaurYu1YnQI4YKLF8npESBrdm_eyv9y-AMHljKuuPOe2pErmZrNQuoP7kfyBAFPes2qDNQneGjD8jHVComUv3sf50ngII"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Top HUD Badges -->
+<div class="absolute top-3.5 left-3.5 px-3 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-md border border-white/10 font-label-caps text-label-caps text-on-surface flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              DOCU SERIES • 22:15
+</div>
+<div class="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md border border-outline-variant/40 font-label-caps text-label-caps text-primary">
+              2024 • DOCUMENTARY
+</div>
+<!-- Floating Center Play Action -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-14 h-14 rounded-full bg-surface-container-lowest/70 backdrop-blur-md border border-primary-container/60 flex items-center justify-center text-primary-container group-hover:scale-110 group-hover:border-primary-container group-hover:bg-primary-container group-hover:text-surface-container-lowest transition-all duration-300 shadow-xl">
+<span class="material-symbols-outlined text-3xl ml-0.5" data-icon="play_arrow" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Project Details Meta Dock -->
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2 mb-2.5">
+<span class="px-2.5 py-0.5 rounded text-label-caps font-label-caps bg-outline/20 text-on-surface border border-outline/30">
+      DIRECTOR &amp; PRODUCER
+    </span>
+<span class="font-label-badge text-label-badge text-on-surface-variant">기획, 촬영, 편집</span>
+</div>
+<h3 class="font-headline-sm text-xl text-on-surface font-bold tracking-tight mb-2.5 group-hover:text-primary transition-colors">
+    NEO SEOUL: 숨겨진 장인들
+  </h3>
+<p class="font-body-md text-sm sm:text-body-md text-on-surface-variant leading-relaxed mb-5">
+    사라져가는 도시의 장인들을 아카이빙한 4K 다큐멘터리 시리즈.
+  </p>
+</div>
+<div class="flex items-center justify-between pt-4 border-t border-outline-variant/20">
+<span class="font-label-caps text-[11px] text-on-surface-variant/80 tracking-wider">SONY FX9 // ZEISS SUPREME</span>
+<a class="inline-flex items-center gap-1.5 font-label-caps text-label-caps text-primary hover:text-primary-container transition-colors font-bold" href="#contact">
+    영상 보기 <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- ================= 5. CONTACT SECTION ================= -->
+<section class="py-16 px-5 sm:px-8 max-w-4xl mx-auto border-t border-outline-variant/20" id="contact">
+<!-- Section Header -->
+<div class="flex items-center justify-between mb-6">
+<div>
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest block mb-1.5">INQUIRY &amp; COLLABORATION</span>
+<h2 class="font-headline-md text-headline-md text-on-background flex items-center gap-2.5">
+            CONTACT <span class="font-light text-on-surface-variant text-2xl">/ 협업 문의</span>
+</h2>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-3xl" data-icon="mail">mail</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed max-w-2xl">
+        새로운 프로젝트, 상업 영상, 협업 제안은 언제든 열려 있습니다. 기획 단계부터 완성까지 함께 고민하고 감각적인 프레임으로 완성합니다.
+</p>
+<!-- Copyable Email Card -->
+<div class="glass-card rounded-2xl p-6 mb-8 relative border border-outline-variant/40 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/50 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-2xl" data-icon="alternate_email">alternate_email</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-0.5">DIRECT EMAIL</span>
+<span class="font-headline-sm text-base sm:text-lg text-on-surface font-semibold tracking-wide select-all" id="email-address">minwoo.director@filmkorea.com</span>
+</div>
+</div>
+<button class="px-5 py-2.5 rounded-full bg-surface-container border border-outline-variant/50 hover:border-primary-container/80 text-primary font-label-caps text-label-caps active:scale-95 transition-all duration-150 flex items-center justify-center gap-2 self-start sm:self-auto" id="copy-btn" onclick="navigator.clipboard.writeText('minwoo.director@filmkorea.com'); alert('이메일 주소가 클립보드에 복사되었습니다.');">
+<span class="material-symbols-outlined text-base" data-icon="content_copy">content_copy</span>
+<span>주소 복사</span>
+</button>
+</div>
+<!-- Social Media Channel Badges / Links -->
+<div class="mb-6">
+<h3 class="font-label-caps text-label-caps text-on-surface-variant tracking-wider uppercase mb-4">OFFICIAL CHANNELS &amp; ARCHIVES</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+<!-- Instagram -->
+<a class="p-4 rounded-xl glass-card flex flex-col items-center justify-center text-center group active:scale-95 transition-all" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="font-label-caps text-label-caps text-on-surface font-semibold group-hover:text-primary transition-colors">Instagram</span>
+<span class="font-body-sm text-xs text-on-surface-variant mt-1">@minwoo.cine</span>
+</a>
+<!-- Vimeo -->
+<a class="p-4 rounded-xl glass-card flex flex-col items-center justify-center text-center group active:scale-95 transition-all" href="https://vimeo.com" rel="noopener noreferrer" target="_blank">
+<span class="font-label-caps text-label-caps text-on-surface font-semibold group-hover:text-secondary transition-colors">Vimeo</span>
+<span class="font-body-sm text-xs text-on-surface-variant mt-1">vimeo.com/minwoo</span>
+</a>
+<!-- YouTube -->
+<a class="p-4 rounded-xl glass-card flex flex-col items-center justify-center text-center group active:scale-95 transition-all" href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+<span class="font-label-caps text-label-caps text-on-surface font-semibold group-hover:text-primary transition-colors">YouTube</span>
+<span class="font-body-sm text-xs text-on-surface-variant mt-1">Lumen Film</span>
+</a>
+<!-- Behance -->
+<a class="p-4 rounded-xl glass-card flex flex-col items-center justify-center text-center group active:scale-95 transition-all" href="https://behance.net" rel="noopener noreferrer" target="_blank">
+<span class="font-label-caps text-label-caps text-on-surface font-semibold group-hover:text-secondary transition-colors">Behance</span>
+<span class="font-body-sm text-xs text-on-surface-variant mt-1">behance.net/minwoo</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="bg-surface-container-lowest full-width bottom border-t border-outline-variant/20 flex flex-col items-center justify-center w-full px-6 py-10 text-center">
+<div class="flex items-center gap-2.5 mb-3.5">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="movie">movie</span>
+<span class="font-headline-sm font-bold text-primary tracking-widest text-lg">K.V. CINEMA</span>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-5 mb-5 font-label-caps text-label-caps text-on-surface-variant">
+<a class="hover:text-primary transition-colors duration-200" href="https://instagram.com">Instagram</a>
+<span class="text-outline-variant">•</span>
+<a class="hover:text-primary transition-colors duration-200" href="https://vimeo.com">Vimeo</a>
+<span class="text-outline-variant">•</span>
+<a class="hover:text-primary transition-colors duration-200" href="https://youtube.com">YouTube</a>
+<span class="text-outline-variant">•</span>
+<a class="hover:text-primary transition-colors duration-200" href="https://behance.net">Behance</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant/70 max-w-md text-xs leading-relaxed">
+        © 2024 KV Cine. All rights reserved. Directed &amp; Produced with Passion.
+</p>
+</footer>
+</div>
+<!-- ================= BOTTOM NAV BAR (Mobile Only) ================= -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2.5 bg-surface/90 backdrop-blur-lg docked full-width bottom-0 border-t border-outline-variant/30 shadow-2xl">
+<!-- Item 1: Home -->
+<a class="flex flex-col items-center justify-center text-primary font-bold py-1 hover:text-primary transition-colors duration-200 active:scale-90 transition-transform duration-150" href="#home">
+<span class="material-symbols-outlined text-2xl" data-icon="home" data-weight="fill">home</span>
+<span class="text-label-caps font-label-caps mt-0.5">Home</span>
+</a>
+<!-- Item 2: About -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 hover:text-primary transition-colors duration-200 active:scale-90 transition-transform duration-150" href="#about">
+<span class="material-symbols-outlined text-2xl" data-icon="person">person</span>
+<span class="text-label-caps font-label-caps mt-0.5">About</span>
+</a>
+<!-- Item 3: Projects -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 hover:text-primary transition-colors duration-200 active:scale-90 transition-transform duration-150" href="#projects">
+<span class="material-symbols-outlined text-2xl" data-icon="movie_filter">movie_filter</span>
+<span class="text-label-caps font-label-caps mt-0.5">Projects</span>
+</a>
+<!-- Item 4: Contact -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant py-1 hover:text-primary transition-colors duration-200 active:scale-90 transition-transform duration-150" href="#contact">
+<span class="material-symbols-outlined text-2xl" data-icon="mail">mail</span>
+<span class="text-label-caps font-label-caps mt-0.5">Contact</span>
+</a>
+</nav>
+<!-- Interactive Smooth Scrolling Controller -->
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElem = document.querySelector(targetId);
+        if (targetElem) {
+          targetElem.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+</script>
+</body></html>
